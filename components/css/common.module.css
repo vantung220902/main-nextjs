@@ -1,0 +1,11 @@
+.textSmall {
+    font-size: 22px;
+    font-weight: bold;
+    color: #2B292D;
+    line-height: 26px;
+}
+
+.layout {
+    width: 90%;
+    margin: 0 auto;
+}

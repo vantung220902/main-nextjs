@@ -1,0 +1,10 @@
+.img {
+    width: 100%;
+    margin: 24px 0 112px;
+}
+
+.imgPage {
+    position: relative;
+    right: -5%;
+    max-height: 596px;
+}
