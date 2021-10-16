@@ -1,11 +1,10 @@
 import React from 'react'
-import styles from './styles.module.css'
 import { Heading, Text, Image, Box, Flex, Spacer } from '@chakra-ui/react'
 import MyButton from '../../components/button'
 function Body() {
     return (
-        <Flex direction={['column', 'column', 'row', 'row']} className={styles.app}>
-            <Box className={styles.left} width={['', '', '46%', '46%']} ml={['12px', '12px', '0', '0']}
+        <Flex direction={['column', 'column', 'row', 'row']}>
+            <Box width={['', '', '46%', '46%']} ml={['12px', '12px', '0', '0']}
             >
                 <Heading fontSize={['60px', '60px', "80", "80"]} fontWeight="bold" mb="32px">
                     Build stunning websites & apps.
@@ -20,7 +19,7 @@ function Body() {
                 </Box>
             </Box>
             <Spacer />
-            <Box className={styles.right} width={['100%', '100%', '52%', '52%']}
+            <Box width={['100%', '100%', '52%', '52%']}
                 mr={['10px', '10px', '0', '0']}
             >
                 <Image mt={['40px', '40px', '0', '0']} src="/images/ouch.png" alt="anh" w="100%" />
