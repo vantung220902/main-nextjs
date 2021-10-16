@@ -4,7 +4,13 @@ import { VStack, Box } from "@chakra-ui/react"
 import Header from '../components/header'
 import Body from '../components/body'
 import Questions from '../components/question'
-import PageTwo from '../components/containerSecond'
+import PageTwo from '../components/pageTwo'
+import PageThree from '../components/pageThree'
+import PageFour from './../components/pageFour'
+import PageFive from './../components/pageFive/index';
+import PageSix from './../components/pageSix/index';
+import FooterEmail from './../components/footerEmail/index';
+import Footer from './../components/footer/index';
 export default function Home() {
   return (
     <div className={styles.app}>
@@ -14,13 +20,21 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Box className={styles.container} bg="#F3C6BD" >
-        <VStack className={styles.homePage} w="90%" m="0 auto">
+        <VStack className={styles.homePage} width={['100vw', '100vw', '90vw', '90vw']} m="0 auto">
           <Header />
           <Body />
         </VStack>
       </Box>
       <Questions />
       <PageTwo />
+      <PageThree />
+      <PageFour />
+      <PageFive />
+      <hr />
+      <PageSix />
+      <FooterEmail />
+      <Footer />
+
     </div>
   )
 }

@@ -1,6 +1,8 @@
 .header {
     display: flex;
     justify-content: space-between;
+    position: relative;
+    margin: 45px 0;
 }
 
 .itemIcon {
@@ -83,4 +85,29 @@
     font-size: 22px;
     line-height: 26px;
     color: #2B292D;
+}
+
+.iconNav {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .text {
+        display: none;
+    }
+
+    .header {
+        background-color: #FFFFFF;
+        top: 0;
+        margin: 0;
+        width: 100vw;
+    }
+
+    .navBar {
+        display: block;
+    }
+
+    .iconNav {
+        display: block;
+    }
 }

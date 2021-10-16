@@ -5,15 +5,15 @@ import styles from './styles.module.css'
 import MyButton from '../button'
 function Header() {
     return (
-        <HStack className={styles.header} w="100%" h="auto" m="45px 0">
+        <HStack className={styles.header} w="100%" h="auto" >
             <Box display="flex">
                 <Image src={"/images/Icon.png"} alt="Icon" />
                 <Box direction="column" mt="4px">
-                    <Text color="Back" fontWeight="bold" fontSize="20">Foundation</Text>
-                    <Text fontSize="sm">Startup landing template</Text>
+                    <Text color="Back" fontWeight="bold" mt={['14px', '14px', '0', '0']} fontSize="20">Foundation</Text>
+                    <Text className={styles.text} fontSize="sm">Startup landing template</Text>
                 </Box>
             </Box>
-            <HStack spacing="24px">
+            <HStack display={['none', 'none', 'flex', 'flex']} className={styles.navBar} spacing="24px">
                 <Text className={styles.textHeading} fontWeight="bold">
                     Home
                 </Text>
@@ -70,6 +70,9 @@ function Header() {
                 </Box>
                 < MyButton body={"Get Started"} color={true} />
             </HStack>
+            <Box display={['flex', 'flex', 'none', 'none']} p="26px 30px" borderLeft="1px solid #ccc">
+                <Image src={'/images/Shape.png'} alt="Shape" />
+            </Box>
         </HStack>
     )
 }

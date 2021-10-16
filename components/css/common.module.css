@@ -9,3 +9,10 @@
     width: 90%;
     margin: 0 auto;
 }
+
+.icon {
+    height: 16px;
+    width: 21px;
+    border-radius: 0px;
+
+}
