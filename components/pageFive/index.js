@@ -4,7 +4,7 @@ import MyButton from '../button'
 import { Box, Text, Heading, Flex, Spacer, Image } from '@chakra-ui/react';
 function PageFive() {
     return (
-        <Box bg="#edf8fb" mixBlendMode="normal" padding="100px 0">
+        <Box bg="#edf8fb" mixBlendMode="normal" w="110%" padding="100px 0">
             <Box width={['95%', '95%', '555px', '555px']} m="0 auto" textAlign="center">
                 <Text className={styleC.textSmall} mb="18px">
                     Engage Visitors

@@ -25,16 +25,30 @@ export default function Home() {
           <Body />
         </VStack>
       </Box>
-      <Questions />
-      <PageTwo />
-      <PageThree />
-      <PageFour />
-      <PageFive />
-      <hr />
-      <PageSix />
-      <FooterEmail />
-      <Footer />
+      <div style={{ width: '100%', }} data-aos="zoom-out-up">
+        <Questions />
+      </div>
+      <div style={{ width: '100%', }} data-aos="zoom-out-up">
+        <PageTwo />
+      </div>
+      <div style={{ width: '100%', }} data-aos="zoom-out-up">
+        <PageThree />
+      </div>
+      <div style={{ width: '100%', }} data-aos="zoom-out-up">
 
+        <PageFour />
+      </div>
+      <div style={{ width: '100%', }} data-aos="zoom-out-up">
+
+        <PageFive />
+      </div>
+      <div style={{ width: '100%', }} data-aos="zoom-out-up">
+        <PageSix />
+      </div>
+      <div style={{ width: '100%', }} data-aos="zoom-out-up">
+        <FooterEmail />
+      </div>
+      <Footer />
     </div>
   )
 }

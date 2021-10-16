@@ -5,7 +5,7 @@ import styles from './styles.module.css'
 import MyButton from '../button'
 function Header() {
     return (
-        <HStack className={styles.header} w="100%" h="auto" >
+        <HStack className={styles.header} w="110%" h="auto" >
             <Box display="flex">
                 <Image src={"/images/Icon.png"} alt="Icon" />
                 <Box direction="column" mt="4px">

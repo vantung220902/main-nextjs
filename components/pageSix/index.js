@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Box, Image, Flex, Text, Heading } from '@chakra-ui/react';
 import styleC from '../css/common.module.css';
 import MyButton from './../button/index';
@@ -26,6 +26,7 @@ function PageSix() {
             items: 1
         }
     };
+    const [active, setActive] = useState(1);
     return (
 
         <Box className={styleC.layout} position="relative" p="70px 0"  >
@@ -87,16 +88,20 @@ function PageSix() {
                     <MyButton body={"More about Company"} color={true} />
                 </Box>
                 <Flex display={['none', 'none', 'flex', 'flex']} direction="column" align="center" mt="100px">
-                    <Flex className={`${styles.btn} ${styles.primary}`} justify="space-between" align="center" bg="#3141C5">
-                        <Heading fontSize="22px" lineHeight="28px" color="#FFFFFF" fontWeight="bold" w="60%">
+                    <Flex cursor="pointer" onClick={() => {
+                        setActive(1)
+                    }} className={`${styles.btn} ${active === 1 ? styles.primary : ""}`} justify="space-between" align="center">
+                        <Heading fontSize="22px" lineHeight="28px" fontWeight="bold" w="60%">
                             Front-End Developer
                         </Heading>
-                        <Text color="#FFFFFF" fontSize="14px">
+                        <Text fontSize="14px">
                             Los Angeles / Remote
                         </Text>
-                        <FaChevronRight color="#FFFFFF" />
+                        <FaChevronRight />
                     </Flex>
-                    <Flex className={styles.btn} justify="space-between" align="center" >
+                    <Flex cursor="pointer" onClick={() => {
+                        setActive(2)
+                    }} className={`${styles.btn} ${active === 2 ? styles.primary : ""}`} justify="space-between" align="center" >
                         <Heading fontSize="22px" lineHeight="28px" fontWeight="bold" w="60%">
                             Community Manager
                         </Heading>
@@ -105,7 +110,9 @@ function PageSix() {
                         </Text>
                         <FaChevronRight />
                     </Flex>
-                    <Flex className={styles.btn} justify="space-between" align="center" >
+                    <Flex cursor="pointer" onClick={() => {
+                        setActive(3)
+                    }} className={`${styles.btn} ${active === 3 ? styles.primary : ""}`} justify="space-between" align="center" >
                         <Heading fontSize="22px" lineHeight="28px" fontWeight="bold" w="60%">
                             UX/UI Designer
                         </Heading>

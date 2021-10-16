@@ -27,11 +27,11 @@ function Footer() {
                         Product
                     </Text>
                     <List>
-                        <ListItem fontSize="18px" mb="8px"> Acquire Users</ListItem>
-                        <ListItem fontSize="18px" mb="8px"> Content Marketing</ListItem>
-                        <ListItem fontSize="18px" mb="8px"> Website Templates</ListItem>
-                        <ListItem fontSize="18px" mb="8px"> Customer Management</ListItem>
-                        <ListItem fontSize="18px" mb="8px"> Virtual Inbox</ListItem>
+                        <ListItem cursor="pointer" fontSize="18px" mb="8px"> Acquire Users</ListItem>
+                        <ListItem cursor="pointer" fontSize="18px" mb="8px"> Content Marketing</ListItem>
+                        <ListItem cursor="pointer" fontSize="18px" mb="8px"> Website Templates</ListItem>
+                        <ListItem cursor="pointer" fontSize="18px" mb="8px"> Customer Management</ListItem>
+                        <ListItem cursor="pointer" fontSize="18px" mb="8px"> Virtual Inbox</ListItem>
                     </List>
                 </Box>
                 <Box width={['100%', '100%', '20%', '20%']}>
@@ -39,10 +39,10 @@ function Footer() {
                         Company
                     </Text>
                     <List>
-                        <ListItem fontSize="18px" mb="8px"> About Foundation</ListItem>
-                        <ListItem fontSize="18px" mb="8px"> Brand Guidelines</ListItem>
-                        <ListItem fontSize="18px" mb="8px"> Press Kit</ListItem>
-                        <ListItem fontSize="18px" mb="8px"> Support</ListItem>
+                        <ListItem cursor="pointer" fontSize="18px" mb="8px"> About Foundation</ListItem>
+                        <ListItem cursor="pointer" fontSize="18px" mb="8px"> Brand Guidelines</ListItem>
+                        <ListItem cursor="pointer" fontSize="18px" mb="8px"> Press Kit</ListItem>
+                        <ListItem cursor="pointer" fontSize="18px" mb="8px"> Support</ListItem>
                     </List>
                 </Box>
             </Flex>

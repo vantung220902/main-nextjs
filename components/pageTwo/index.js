@@ -22,7 +22,7 @@ function PageTwo() {
                     <Box display={['none', 'none', 'block', 'block']}>
                         <Flex mb="8px">
                             <Image src={"/images/IconLocation.png"} alt="Anh" />
-                            <Text className={styleC.textSmall} color="#3142C6" >
+                            <Text ml="12px" cursor="pointer" className={styleC.textSmall} color="#3142C6" >
                                 Acquire new customers
                             </Text>
                         </Flex>
@@ -34,13 +34,13 @@ function PageTwo() {
                         </Box>
                         <Flex pb="16px" borderBottom="1px solid #333" mt="14px">
                             <Image src={"/images/icon1.png"} alt="Anh" />
-                            <Text className={styleC.textSmall} color="#2B292D"  >
+                            <Text ml="12px" cursor="pointer" className={styleC.textSmall} color="#2B292D"  >
                                 Acquire new customers
                             </Text>
                         </Flex>
                         <Flex pb="16px" borderBottom="1px solid #333" mt="14px">
                             <Image src={"/images/icon2.png"} alt="Anh" />
-                            <Text className={styleC.textSmall} color="#2B292D"  >
+                            <Text ml="12px" cursor="pointer" className={styleC.textSmall} color="#2B292D"  >
                                 Acquire new customers
                             </Text>
                         </Flex>

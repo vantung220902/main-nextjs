@@ -4,7 +4,7 @@ import { Text } from '@chakra-ui/react';
 
 function Questions() {
     return (
-        <Box bg="#F4F5F7" padding="60px 0" >
+        <Box bg="#F4F5F7" w="110%" padding="60px 0" >
             <Flex w="90%" m="0 auto" direction={['column', 'column', 'row', 'row']}>
                 <Box width={['100%', '100%', '48%', '48%']} mb="12px">
                     <Heading fontSize="22px" fontWeight="bold" color="#2B292D" >
