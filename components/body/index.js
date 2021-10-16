@@ -5,13 +5,12 @@ import MyButton from '../../components/button'
 function Body() {
     return (
         <Flex direction={['column', 'column', 'row', 'row']} className={styles.app}>
-            <Box className={styles.left} width={['100%', '100%', '46%', '46%']} ml={['12px', '12px', '0', '0']}
-
+            <Box className={styles.left} width={['', '', '46%', '46%']} ml={['12px', '12px', '0', '0']}
             >
-                <Heading fontSize="80" fontWeight="bold" mb="32px">
+                <Heading fontSize={['60px', '60px', "80", "80"]} fontWeight="bold" mb="32px">
                     Build stunning websites & apps.
                 </Heading>
-                <Text variant="paragraph" fontSize="24" mb="48px" maxW="90%">
+                <Text variant="paragraph" fontSize={['18px', '18px', "24", "24"]} mb="48px" maxW="90%">
                     Create live segments and target the right people for messages based on their behaviors.
                 </Text>
                 <Box display="flex" flexDirection={['column', 'column', 'row', 'row']}  >

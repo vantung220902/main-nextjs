@@ -1,7 +1,7 @@
 import React from 'react'
 import styleC from '../css/common.module.css'
 import MyButton from '../button'
-import { Box, Text, Heading, Flex, Spacer } from '@chakra-ui/react';
+import { Box, Text, Heading, Flex, Spacer, Image } from '@chakra-ui/react';
 function PageFive() {
     return (
         <Box bg="#edf8fb" mixBlendMode="normal" padding="100px 0">
@@ -21,17 +21,41 @@ function PageFive() {
                 </Flex>
             </Box>
             <Flex className={styleC.layout} wrap="wrap">
-                <Box backgroundPosition="center"
-                    backgroundRepeat="no-repeat" width={['100%', '100%', '262px', '262px']} h="300px" mb="18px" backgroundImage="url('/images/Item 1.png')" alt="Anh" />
+                <Flex justify="center" align="center" borderRadius="4px" _hover={{
+                    background: "#3141C5",
+                    transition: "all 0.3s linear",
+                    cursor: 'pointer',
+                }}
+                    width={['100%', '100%', '262px', '262px']} bg="#FFFFFF" mb="18px" >
+                    <Image src={'/images/robot.png'} w="80%" h="80%" alt="Anh" />
+                </Flex>
                 <Spacer />
-                <Box backgroundPosition="center"
-                    backgroundRepeat="no-repeat" width={['100%', '100%', '262px', '262px']} h="300px" mb="18px" backgroundImage="url('/images/Item 2.png')" alt="Anh" />
+                <Flex justify="center" align="center" borderRadius="4px" _hover={{
+                    background: "#3141C5",
+                    transition: "all 0.3s linear",
+                    cursor: 'pointer',
+                }}
+                    width={['100%', '100%', '262px', '262px']} bg="#FFFFFF" mb="18px" >
+                    <Image src={'/images/tivi.png'} w="80%" h="80%" alt="Anh" />
+                </Flex>
                 <Spacer />
-                <Box backgroundPosition="center"
-                    backgroundRepeat="no-repeat" width={['100%', '100%', '262px', '262px']} h="300px" mb="18px" backgroundImage="url('/images/Item 3.png')" alt="Anh" />
+                <Flex justify="center" align="center" borderRadius="4px" _hover={{
+                    background: "#3141C5",
+                    transition: "all 0.3s linear",
+                    cursor: 'pointer',
+                }}
+                    width={['100%', '100%', '262px', '262px']} bg="#FFFFFF" mb="18px" >
+                    <Image src={'/images/leter.png'} w="80%" h="80%" alt="Anh" />
+                </Flex>
                 <Spacer />
-                <Box backgroundPosition="center"
-                    backgroundRepeat="no-repeat" width={['100%', '100%', '262px', '262px']} h="300px" mb="18px" backgroundImage="url('/images/Item 4.png')" alt="Anh" />
+                <Flex justify="center" align="center" borderRadius="4px" _hover={{
+                    background: "#3141C5",
+                    transition: "all 0.3s linear",
+                    cursor: 'pointer',
+                }}
+                    width={['100%', '100%', '262px', '262px']} bg="#FFFFFF" mb="18px" >
+                    <Image src={'/images/den.png'} w="80%" h="80%" alt="Anh" />
+                </Flex>
             </Flex>
         </Box>
     )

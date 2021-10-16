@@ -7,8 +7,9 @@ function MyApp({ Component, pageProps }) {
     <ChakraProvider>
       <ColorModeScript resetCSS theme={theme} initialColorMode="light" />
       <Head>
-        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet"></link>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
       </Head>
+
       <Component {...pageProps} />
     </ChakraProvider>
   )

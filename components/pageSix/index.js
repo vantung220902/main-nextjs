@@ -4,31 +4,78 @@ import styleC from '../css/common.module.css';
 import MyButton from './../button/index';
 import styles from './styles.module.css';
 import { FaChevronRight } from 'react-icons/fa';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 function PageSix() {
+    const responsive = {
+        superLargeDesktop: {
+            // the naming can be any, depends on you.
+            breakpoint: { max: 4000, min: 3000 },
+            items: 5
+        },
+        desktop: {
+            breakpoint: { max: 3000, min: 1024 },
+            items: 1
+        },
+        tablet: {
+            breakpoint: { max: 1024, min: 464 },
+            items: 1
+        },
+        mobile: {
+            breakpoint: { max: 464, min: 0 },
+            items: 1
+        }
+    };
     return (
-        <Box className={styleC.layout} p="70px 0"  >
+
+        <Box className={styleC.layout} position="relative" p="70px 0"  >
             <Image src={"/images/Logos.png"} alt="Anh" />
-            <Box textAlign="center" position="relative" m="60px 0 120px">
-                <Text className={styleC.textSmall} mb="18px" color="#3142C6">
-                    Trusted by the world’s most innovative businesses – big and small
-                </Text>
-                <Text className={styleC.textSmall} m="0 auto" mb="18px" maxW="750px" fontWeight="400">
-                    “Comprehensive set of startup tools for all imaginable entrepreneurial needs. Create landing pages, send emails, find freelancers. Perfect for sales, marketing, and support”
-                </Text>
-                <Text fontWeight="bold">
-                    Viella Malkovich
-                </Text>
-                <Text>
-                    Creative Director at Johnson
-                </Text>
-                <Flex justify="center" mt="12px">
-                    <Box w="8px" h="8px" borderRadius="50%" mr="8px" bg="#3142C5" />
-                    <Box w="8px" h="8px" borderRadius="50%" mr="8px" bg="#2B292D" />
-                    <Box w="8px" h="8px" borderRadius="50%" mr="8px" bg="#2B292D" />
-                </Flex>
-                <Box backgroundImage="url('/images/anh4.png')" backgroundPosition="center"
-                    backgroundRepeat="no-repeat" position={['', '', 'absolute', 'absolute']} mt="4px" w="273px" h="243px" right="0" top="40%" />
-            </Box>
+            <Carousel arrows={true} responsive={responsive} showDots={true} >
+                <Box textAlign="center" m="60px 0 120px">
+                    <Text className={styleC.textSmall} mb="18px" color="#3142C6">
+                        Trusted by the world’s most innovative businesses – big and small
+                    </Text>
+                    <Text className={styleC.textSmall} m="0 auto" mb="18px" maxW="750px" fontWeight="400">
+                        “Comprehensive set of startup tools for all imaginable entrepreneurial needs. Create landing pages, send emails, find freelancers. Perfect for sales, marketing, and support”
+                    </Text>
+                    <Text fontWeight="bold">
+                        Viella Malkovich
+                    </Text>
+                    <Text>
+                        Creative Director at Johnson
+                    </Text>
+                </Box>
+                <Box textAlign="center" m="60px 0 120px">
+                    <Text className={styleC.textSmall} mb="18px" color="#3142C6">
+                        Trusted by the world’s most innovative businesses – big and small
+                    </Text>
+                    <Text className={styleC.textSmall} m="0 auto" mb="18px" maxW="750px" fontWeight="400">
+                        “Comprehensive set of startup tools for all imaginable entrepreneurial needs. Create landing pages, send emails, find freelancers. Perfect for sales, marketing, and support”
+                    </Text>
+                    <Text fontWeight="bold">
+                        Viella Malkovich
+                    </Text>
+                    <Text>
+                        Creative Director at Johnson
+                    </Text>
+                </Box>
+                <Box textAlign="center" m="60px 0 120px">
+                    <Text className={styleC.textSmall} mb="18px" color="#3142C6">
+                        Trusted by the world’s most innovative businesses – big and small
+                    </Text>
+                    <Text className={styleC.textSmall} m="0 auto" mb="18px" maxW="750px" fontWeight="400">
+                        “Comprehensive set of startup tools for all imaginable entrepreneurial needs. Create landing pages, send emails, find freelancers. Perfect for sales, marketing, and support”
+                    </Text>
+                    <Text fontWeight="bold">
+                        Viella Malkovich
+                    </Text>
+                    <Text>
+                        Creative Director at Johnson
+                    </Text>
+                </Box>
+            </Carousel>
+            <Box backgroundImage="url('/images/anh4.png')" backgroundPosition="center"
+                backgroundRepeat="no-repeat" position={['', '', 'absolute', 'absolute']} mt="4px" w="273px" h="243px" right="0" top="21%" />
             <Box padding="60px 0" borderTop="1px solid #cccc">
                 <Box width={['100%', '100%', '555px', '555px']} m="0 auto" textAlign="center">
                     <Heading fontSize="56px" color="#2B292D" mb="18px" letterSpacing="-0.5px">
