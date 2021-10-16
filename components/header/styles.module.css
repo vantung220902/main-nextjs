@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     position: relative;
-    margin: 45px 0;
+    margin: 45px auto;
 }
 
 .itemIcon {

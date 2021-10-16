@@ -1,9 +1,10 @@
 import React from 'react'
 import { Heading, Text, Image, Box, Flex, Spacer } from '@chakra-ui/react'
 import MyButton from '../../components/button'
+
 function Body() {
     return (
-        <Flex direction={['column', 'column', 'row', 'row']}>
+        <Flex w="90%" direction={['column', 'column', 'row', 'row']}>
             <Box width={['', '', '46%', '46%']} ml={['12px', '12px', '0', '0']}
             >
                 <Heading fontSize={['60px', '60px', "80", "80"]} fontWeight="bold" mb="32px">

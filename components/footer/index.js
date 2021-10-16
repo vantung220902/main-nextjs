@@ -2,6 +2,7 @@ import React from 'react'
 import styleC from '../css/common.module.css'
 import { Box, Image, Text, Flex, Spacer, List, ListItem } from '@chakra-ui/react';
 import { FaFacebookSquare, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
+
 function Footer() {
     return (
         <>

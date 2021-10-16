@@ -2,9 +2,10 @@ import React from 'react'
 import { Flex, Image, Input, Box, Heading, Text, Spacer } from '@chakra-ui/react';
 import styleC from '../css/common.module.css'
 import MyButton from './../button/index';
+
 function FooterEmail() {
     return (
-        <Box bg="#F4F5F7" w="110%" p="60px 0">
+        <Box bg="#F4F5F7" w="100%" p="60px 0">
             <Flex justify="center" direction={['column', 'column', 'row', 'row']} className={styleC.layout}>
                 <Image src={"/images/anh5.png"} alt="Anh" mr="90px" />
                 <Box width={['100%', '100%', '38%', '38%']}>

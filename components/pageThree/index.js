@@ -3,7 +3,7 @@ import { Box, Image, Text, Flex, Spacer, Heading, Avatar } from '@chakra-ui/reac
 import styleC from '../css/common.module.css'
 function PageThree() {
     return (
-        <Box w="110%" bg="#FCF0E3">
+        <Box w="100%" bg="#FCF0E3">
             <Flex width={['100%', '100%', '80%', '80%']} m="0 auto" direction={['column', 'column', 'row', 'row']} p="142px 0 118px">
                 <Box width={['100%', '100%', '40%', '40%']} mb="24px">
                     <Image src={"/images/anh3.png"} alt="anh" />

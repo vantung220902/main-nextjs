@@ -20,7 +20,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Box className={styles.container} bg="#F3C6BD" >
-        <VStack className={styles.homePage} width={['100vw', '100vw', '90vw', '90vw']} m="0 auto">
+        <VStack className={styles.homePage} width={['100vw', '100vw', '100vw', '100vw']} >
           <Header />
           <Body />
         </VStack>
