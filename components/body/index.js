@@ -8,10 +8,12 @@ function Body() {
             <Box width={['', '', '46%', '46%']} ml={['12px', '12px', '0', '0']}
             >
                 <Heading fontSize={['60px', '60px', "80", "80"]} fontWeight="bold" mb="32px">
-                    Build stunning websites & apps.
+                    <span data-aos="fade-right">
+                        Build stunning websites & apps.
+                    </span>
                 </Heading>
                 <Text variant="paragraph" fontSize={['18px', '18px', "24", "24"]} mb="48px" maxW="90%">
-                    Create live segments and target the right people for messages based on their behaviors.
+                    <span data-aos="fade-left"> Create live segments and target the right people for messages based on their behaviors.</span>
                 </Text>
                 <Box display="flex" flexDirection={['column', 'column', 'row', 'row']}  >
                     <MyButton color={true} body={"Get Started"} />
